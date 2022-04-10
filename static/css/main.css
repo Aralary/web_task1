@@ -42,3 +42,8 @@ border-color: red;
 width: 80px;
 margin: 5px;
 }
+
+.tag{
+font-size: 150%;
+color: blue;
+}
