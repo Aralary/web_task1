@@ -7,6 +7,19 @@ main > .container {
   margin: 20px;
   padding: 10px;
 }
+
+.t_area{
+resize: none;
+height: 200px;
+margin: 20px;
+width: 925px;
+border-radius: 5px
+}
+.answer{
+  margin: 20px;
+  padding: 10px;
+}
+
 .picture{
   width: 140px;
   height: 140px;

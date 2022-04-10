@@ -8,7 +8,10 @@
     <meta name="generator" content="Hugo 0.88.1">
     <title>Sticky Footer Navbar Template · Bootstrap v5.1</title>
 
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
 
+    <!-- Custom styles for this template -->
+    <link href="../static/css/main.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -42,9 +45,11 @@
 
 
 
-    
+
+
 
     </style>
+
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -70,17 +75,26 @@
                         <a class="nav-link disabled">Disabled</a>
                     </li>
                 </ul>
+
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2 search_f" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success search_f" type="submit">Search</button>
                     <img src="../img/logo.jpg" class="logo_header" alt="">
                     <div class="col-3">
                         <li class="nav-item">
                             <div class="login" title="your_login">Authorized user</div>
                         </li>
-                        <button class="btn btn-outline-success logout_b" type="submit">Logout</button>
+                        <div class="row">
+                            <div class="col-5">
+                                <a href="www.youtube.com">settings</a>
+                            </div>
+                            <div class="col-5">
+                                <a href="www.youtube.com">logout</a>
+                            </div>
+                        </div>
                     </div>
                 </form>
+
             </div>
         </div>
     </nav>
@@ -91,38 +105,16 @@
     <div class="container">
         <div class="row">
             <div class="col-9">
-                <h2 class="mt-5">Questions</h2>
-
-                <div class="row question">
+                <div class="row answer mt-5">
                     <div class="col-2">
-                        <img src="img/duck.jpg" class="picture" alt="">
-
-                    </div>
-                    <div class="col-10">
-                        <h4>Question1</h4>
-                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
-                            является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
-                            безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
-                            для распечатки образцов. </p>
-                    </div>
-                </div>
-                <div class="row question">
-                    <div class="col-2">
-                        <img src="img/duck.jpg" class="picture" alt="">
-
-                    </div>
-                    <div class="col-10">
-                        <h4>Question2</h4>
-                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
-                            является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
-                            безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
-                            для распечатки образцов. </p>
-                    </div>
-                </div>
-                <div class="row question">
-                    <div class="col-2">
-                        <img src="img/duck.jpg" class="picture" alt="">
-
+                        <img src="../img/duck.jpg" class="picture" alt="">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-4">100</div>
+                            <div class="col-4">
+                                <button class="navbar-toggler like">like</button>
+                                <button class="navbar-toggler dislike">dislike</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-10">
                         <h4>Question3</h4>
@@ -130,15 +122,85 @@
                             является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
                             безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
                             для распечатки образцов. </p>
+                        <div class="row">
+                            <div class="col-3" style="text-align: center;">
+                                <a href="">answers(N)</a>
+                            </div>
+                            <div class="col-1">Tags:</div>
+                            <div class="col-2">
+                                <a href="">first tag</a>
+                            </div>
+                            <div class="col-2">
+                                <a href="">first tag</a>
+                            </div>
+                            <div class="col-2">
+                                <a href="">first tag</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
+                <hr>
+                <div class="row question">
+                    <div class="col-2">
+                        <img src="../img/duck.jpg" class="picture" alt="">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-4">100</div>
+                            <div class="col-4">
+                                <button class="navbar-toggler like">like</button>
+                                <button class="navbar-toggler dislike">dislike</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10">
+                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                            является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+                            безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
+                            для распечатки образцов. </p>
+                    </div>
+                </div>
+                <div class="row question">
+                    <div class="col-2">
+                        <img src="../img/duck.jpg" class="picture" alt="">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-4">100</div>
+                            <div class="col-4">
+                                <button class="navbar-toggler like">like</button>
+                                <button class="navbar-toggler dislike">dislike</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10">
+                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                            является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+                            безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
+                            для распечатки образцов. </p>
+                    </div>
+                </div>
+                <hr>
+                <textarea class="t_area" placeholder="Enter your answer here"
+                          aria-label="Enter your answer here"></textarea>
+                <button class="btn btn-outline-success" style="margin: 20px;" type="submit">Answer</button>
             </div>
             <div class="col-3">
-                <h2 class="mt-5">Tags</h2>
+                <div class="col-3">
+                    <h2 class="mt-5">Tags</h2>
+                    <div class="row">
+                        <a href="">
+                            <div class="tag">first tag</div>
+                        </a>
+                        <a href="">
+                            <div class="tag">second tag</div>
+                        </a>
+                        <a href="">
+                            <div class="tag">third tag</div>
+                        </a>
+                        <a href="">
+                            <div class="tag">others tag</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
 </main>
 
@@ -156,4 +218,3 @@
 
 </body>
 </html>
-
