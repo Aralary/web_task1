@@ -31,3 +31,14 @@ padding: 0px;
 height: 35px;
 margin: 16px;
 }
+
+.like{
+border-color: green;
+width: 80px;
+margin: 5px;
+}
+.dislike{
+border-color: red;
+width: 80px;
+margin: 5px;
+}
