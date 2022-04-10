@@ -8,8 +8,10 @@
     <meta name="generator" content="Hugo 0.88.1">
     <title>Sticky Footer Navbar Template · Bootstrap v5.1</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
 
+    <!-- Custom styles for this template -->
+    <link href="../static/css/main.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -41,15 +43,9 @@
       }
 
 
-
-
-    
-
     </style>
 
 
-    <!-- Custom styles for this template -->
-    <link href="css/main.css" rel="stylesheet">
 </head>
 <body class="d-flex flex-column h-100">
 
@@ -74,10 +70,19 @@
                         <a class="nav-link disabled">Disabled</a>
                     </li>
                 </ul>
+
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2 search_f" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success search_f" type="submit">Search</button>
+                    <img src="../img/logo.jpg" class="logo_header" alt="">
+                    <div class="col-3">
+                        <li class="nav-item">
+                            <div class="login" title="your_login">Authorized user</div>
+                        </li>
+                        <button class="btn btn-outline-success logout_b" type="submit">Logout</button>
+                    </div>
                 </form>
+
             </div>
         </div>
     </nav>
@@ -88,11 +93,11 @@
     <div class="container">
         <div class="row">
             <div class="col-9">
-                <h2 class="mt-5">Questions</h2>
+                <h2 class="mt-5">First column</h2>
 
                 <div class="row question">
                     <div class="col-2">
-                        <img src="img/duck.jpg" class="picture" alt="">
+                        <img src="../img/duck.jpg" class="picture" alt="">
 
                     </div>
                     <div class="col-10">
@@ -103,39 +108,17 @@
                             для распечатки образцов. </p>
                     </div>
                 </div>
-                <div class="row question">
-                    <div class="col-2">
-                        <img src="img/duck.jpg" class="picture" alt="">
-
-                    </div>
-                    <div class="col-10">
-                        <h4>Question2</h4>
-                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
-                            является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
-                            безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
-                            для распечатки образцов. </p>
-                    </div>
-                </div>
-                <div class="row question">
-                    <div class="col-2">
-                        <img src="img/duck.jpg" class="picture" alt="">
-
-                    </div>
-                    <div class="col-10">
-                        <h4>Question3</h4>
-                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
-                            является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
-                            безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum
-                            для распечатки образцов. </p>
-                    </div>
-                </div>
 
             </div>
             <div class="col-3">
-                <h2 class="mt-5">Tags</h2>
+                <h2 class="mt-5">Second column</h2>
+                <div class="row">
+                    <div class="col-3">first</div>
+                    <div class="col-3">second</div>
+                    <div class="col-3">third</div>
+                </div>
             </div>
         </div>
-
     </div>
 </main>
 
@@ -153,4 +136,3 @@
 
 </body>
 </html>
-

@@ -1,0 +1,33 @@
+main > .container {
+  padding: 60px 15px 0;
+}
+.question{
+  border: 3px solid gray;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+}
+.picture{
+  width: 140px;
+  height: 140px;
+}
+.logo_header{
+width: 30px;
+height: 30px;
+margin: 3px
+}
+.login{
+    color: white;
+    width: 120px;
+    margin: 6px;
+}
+.logout_b{
+width: 80px;
+margin: 3px;
+padding: 0px;
+}
+
+.search_f{
+height: 35px;
+margin: 16px;
+}
