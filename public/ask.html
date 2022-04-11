@@ -8,9 +8,10 @@
     <meta name="generator" content="Hugo 0.88.1">
     <title>Sticky Footer Navbar Template · Bootstrap v5.1</title>
 
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+
     <!-- Custom styles for this template -->
-    <link href="static/css/main.css" rel="stylesheet">
+    <link href="../static/css/main.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -44,11 +45,16 @@
 
 
 
-    
+
+
+
+
+
+
+
 
 
     </style>
-
 
 
 </head>
@@ -75,10 +81,26 @@
                         <a class="nav-link disabled">Disabled</a>
                     </li>
                 </ul>
+
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2 search_f" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success search_f" type="submit">Search</button>
+                    <img src="../img/logo.jpg" class="logo_header" alt="">
+                    <div class="col-3">
+                        <li class="nav-item">
+                            <div class="login" title="your_login">Authorized user</div>
+                        </li>
+                        <div class="row">
+                            <div class="col-5">
+                                <a href="www.youtube.com">settings</a>
+                            </div>
+                            <div class="col-5">
+                                <a href="www.youtube.com">logout</a>
+                            </div>
+                        </div>
+                    </div>
                 </form>
+
             </div>
         </div>
     </nav>
@@ -89,30 +111,57 @@
     <div class="container">
         <div class="row">
             <div class="col-9">
-                <h2 class="mt-5">Ask question</h2>
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <h2 class="mt-5">New question</h2>
+                <div class="row answer">
+                    <div class="col-2">
+                        <div style="font-size: 170%;">Title</div>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    <div class="col-10">
+                        <input class="new_question_input" type="text" placeholder="Title of your question">
                     </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <div class="row answer">
+                    <div class="col-2">
+                        <div style="font-size: 170%;">Text</div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                    <div class="col-10">
+                        <textarea class="new_question_t_area" placeholder="Enter your question text"
+                                  aria-label="Enter your answer here"></textarea>
+                    </div>
+                </div>
+                <div class="row answer">
+                    <div class="col-2">
+                        <div style="font-size: 170%;">Tags</div>
+                    </div>
+                    <div class="col-10">
+                        <input class="new_question_input" type="text" placeholder="Tags of your question">
+                        <h5 style="margin: 8px; color: red;">Incorrect format of data</h5>
+                        <button class="btn btn-outline-success" style="margin: 8px;" type="submit">Ask</button>
+                    </div>
+
+                </div>
 
             </div>
             <div class="col-3">
-                <h2 class="mt-5">Tags</h2>
+                <div class="col-3">
+                    <h2 class="mt-5">Tags</h2>
+                    <div class="row">
+                        <a href="">
+                            <div class="tag">first tag</div>
+                        </a>
+                        <a href="">
+                            <div class="tag">second tag</div>
+                        </a>
+                        <a href="">
+                            <div class="tag">third tag</div>
+                        </a>
+                        <a href="">
+                            <div class="tag">others tag</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
 </main>
 
@@ -130,4 +179,3 @@
 
 </body>
 </html>
-
