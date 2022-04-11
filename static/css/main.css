@@ -42,8 +42,9 @@ padding: 0px;
 
 .search_f{
 height: 35px;
-margin: 15px;
+margin: 25px;
 }
+
 
 .like{
 border-color: green;
@@ -63,7 +64,7 @@ color: blue;
 
 .new_question_input{
     margin: 8px;
-width: 740px;
+    width: 740px;
 }
 .new_question_t_area{
     margin: 8px;
@@ -75,4 +76,14 @@ resize: none;
 .login{
     width: 400px;
     height: 50px;
+}
+
+.reg_field{
+    margin: 8px;
+    width: 400px;
+}
+
+.reg_tag{
+font-size: 130%;
+margin: 6px;
 }
